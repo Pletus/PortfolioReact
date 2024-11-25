@@ -4,10 +4,14 @@ import htmlIcon from "../assets/icons/html-5-svgrepo-com.svg";
 import cssIcon from "../assets/icons/css-3-svgrepo-com.svg";
 import javaScriptIcon from "../assets/icons/javascript-svgrepo-com.svg";
 import reactIcon from "../assets/icons/react-svgrepo-com.svg";
-import nodeIcon from "../assets/icons/Node.js.svg"
+import nodeIcon from "../assets/icons/Node.js.svg";
 import expressIcon from "../assets/icons/Express.svg";
-import tailwindIcon from "../assets/icons/tailwind-svgrepo-com.svg"
+import tailwindIcon from "../assets/icons/tailwind-svgrepo-com.svg";
 import mongoIcon from "../assets/icons/mongodb-svgrepo-com.svg";
+import githubIcon from "../assets/icons/icons8-github-96.png";
+import linkedinIcon from "../assets/icons/icons8-linkedin-96.png";
+import emailIcon from "../assets/icons/gmail.png";
+import pinIcon from "../assets/icons/pin.png";
 import "../App.css";
 
 function Main() {
@@ -43,16 +47,8 @@ function Main() {
         <br />
         <div className="flex flex-wrap gap-4 lg:gap-8 md:gap-8 pl-0 md:pl-4 lg:pl-4 pt-2 md:pt-4 lg:pt-4 justify-center lg:justify-start md:justify-start">
           <div className="flex gap-4 lg:gap-8 md:gap-8">
-            <img
-              className="ts-icons duration-500"
-              src={htmlIcon}
-              alt="HTML"
-            />
-            <img
-              className="ts-icons duration-500"
-              src={cssIcon}
-              alt="CSS"
-            />
+            <img className="ts-icons duration-500" src={htmlIcon} alt="HTML" />
+            <img className="ts-icons duration-500" src={cssIcon} alt="CSS" />
           </div>
           <div className="flex gap-4 lg:gap-8 md:gap-8">
             <img
@@ -67,11 +63,7 @@ function Main() {
             />
           </div>
           <div className="flex gap-4 lg:gap-8 md:gap-8">
-            <img
-              className="ts-icons duration-500"
-              src={nodeIcon}
-              alt="Node"
-            />
+            <img className="ts-icons duration-500" src={nodeIcon} alt="Node" />
             <img
               className="ts-icons duration-500"
               src={expressIcon}
@@ -94,43 +86,10 @@ function Main() {
       </section>
       <br />
       <section
-        id="about"
-        className="bg-white flex flex-col md:flex-row lg:flex-row p-12 lg:p-40 md:p-20 xl:px-80 2xl:px-96 pb-2 sm:pb-4 w-full min-h-lvh"
-      >
-        <div className="flex flex-col justify-center md:w-1/2 lg:w-1/2 xl:w-1/2 2xl:w-1/2">
-          <h5 className="text-blue-600/100 text-black h3 text-4xl pt-4 pl-0 md:pl-2 lg:pl-3 text-center md:text-left lg:text-left">
-            About
-          </h5>
-          <br />
-          <h5 className="text-black h3 text-lg text-xl pt-4 text-center md:text-left lg:text-left">
-            Full-Stack Developer based in Berlin
-          </h5>
-          <br />
-          <p className="text-black h3 pt-4 text-center md:text-left lg:text-left">
-            Hey, my name is Yago, Junior Full-Stack Developer. I'm passionate
-            about programming and have gained practical experience in both
-            frontend and backend development. I've worked with technologies like
-            TailwindCSS, HTML, CSS, JavaScript, and React, as well as backend
-            technologies like Node.js, Express, and databases such as MySQL and
-            MongoDB.
-          </p>
-        </div>  
-        <div className="border-b-2 pt-28 border-black"></div>
-        <div className="my-16 md:my-0 lg:my-0 mx-0 md:mx-12 lg:mx-32 divider2"></div>
-        <div className="flex justify-center items-center pb-28 md:pb-0 lg:pb-0 xl:pb-0 2xl:pb-0 md:w-1/2 lg:w-1/2 xl:w-1/2 2xl:w-1/2 relative">
-          <img
-            className="w-auto"
-            src="https://images.unsplash.com/photo-1522252234503-e356532cafd5?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZGV2ZWxvcGVyfGVufDB8fDB8fHww"
-            alt="desktop-img"
-          />
-          <img />
-        </div>
-      </section>
-      <section
         id="projects"
-        className="w-full min-h-lvh py-20 about flex flex-col md:flex-col lg:flex-col xl:flex-col p-4 px-10 md:px-20 lg:px-40 xl:px-80 2xl:px-96 justify-center"
+        className="w-full bg-white min-h-lvh py-20 about flex flex-col md:flex-col lg:flex-col xl:flex-col p-4 px-10 md:px-20 lg:px-40 xl:px-80 2xl:px-96 justify-center"
       >
-        <h5 className="text-blue-700/100 text-black h3 mb-20 lg:mb-4 text-4xl pt-4 pl-0 md:pl-2 lg:pl-3 text-center md:text-left lg:text-left">
+        <h5 className="text-black h3 mb-20 lg:mb-4 text-4xl pt-4 pl-0 md:pl-2 lg:pl-3 text-center md:text-left lg:text-left">
           Projects
         </h5>
         <div className="flex flex-col gap-24 items-center justify-center py-4 md:py-20 lg:py-20">
@@ -149,7 +108,7 @@ function Main() {
             />
           </a>
         </div>
-        <h3 className="pb-2 mt-20 md:mt-0 md:pb-12 text-blue-700/100 justify-center text-black h3 mb-20 lg:mb-4 text-4xl pt-4 pl-0 md:pl-2 lg:pl-3 text-center md:text-left lg:text-left">
+        <h3 className="pb-2 mt-20 md:mt-0 md:pb-12 justify-center text-black h3 mb-20 lg:mb-4 text-4xl pt-4 pl-0 md:pl-2 lg:pl-3 text-center md:text-left lg:text-left">
           On GitHub
         </h3>
         <div className="flex flex-wrap justify-evenly items-center gap-8 md:gap-24">
@@ -321,10 +280,43 @@ function Main() {
         </div>
       </section>
       <section
+        id="about"
+        className="flex flex-col md:flex-row lg:flex-row p-12 lg:p-40 md:p-20 xl:px-80 2xl:px-96 pb-2 sm:pb-4 w-full min-h-lvh"
+      >
+        <div className="flex flex-col justify-center md:w-1/2 lg:w-1/2 xl:w-1/2 2xl:w-1/2">
+          <h5 className="text-black h3 text-4xl pt-4 pl-0 md:pl-2 lg:pl-3 text-center md:text-left lg:text-left">
+            About
+          </h5>
+          <br />
+          <h5 className="text-black h3 text-lg text-xl pt-4 text-center md:text-left lg:text-left">
+            Full-Stack Developer based in Berlin
+          </h5>
+          <br />
+          <p className="text-black h3 pt-4 text-center md:text-left lg:text-left">
+            Hey, my name is Yago, Junior Full-Stack Developer. I'm passionate
+            about programming and have gained practical experience in both
+            frontend and backend development. I've worked with technologies like
+            TailwindCSS, HTML, CSS, JavaScript, and React, as well as backend
+            technologies like Node.js, Express, and databases such as MySQL and
+            MongoDB.
+          </p>
+        </div>
+        <div className="border-b-2 pt-28 border-black"></div>
+        <div className="my-16 md:my-0 lg:my-0 mx-0 md:mx-12 lg:mx-32 divider2"></div>
+        <div className="flex justify-center items-center pb-28 md:pb-0 lg:pb-0 xl:pb-0 2xl:pb-0 md:w-1/2 lg:w-1/2 xl:w-1/2 2xl:w-1/2 relative">
+          <img
+            className="w-auto"
+            src="https://images.unsplash.com/photo-1522252234503-e356532cafd5?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZGV2ZWxvcGVyfGVufDB8fDB8fHww"
+            alt="desktop-img"
+          />
+          <img />
+        </div>
+      </section>
+      <section
         id="contact"
         className="bg-white flex flex-col p-12 lg:p-40 md:px-20 xl:px-80 2xl:px-96 w-full min-h-lvh"
       >
-        <h5 className="text-blue-600/100 text-black h3 text-4xl pt-4 pl-0 md:pl-2 lg:pl-3 text-center md:text-left lg:text-left">
+        <h5 className="text-black h3 text-4xl pt-4 pl-0 md:pl-2 lg:pl-3 text-center md:text-left lg:text-left">
           Contact
         </h5>
         <br />
@@ -339,7 +331,7 @@ function Main() {
                 <div className="flex pl-0 gap-6 flex-row items-center">
                   <img
                     className="ts-icons duration-700"
-                    src="./assets/icons/pin.png"
+                    src={pinIcon}
                     alt="Location"
                   />
                   <div>
@@ -356,7 +348,7 @@ function Main() {
                 <div className="flex gap-6 flex-row items-center">
                   <img
                     className="ts-icons duration-700"
-                    src="./assets/icons/gmail.png"
+                    src={emailIcon}
                     alt="E-mail"
                   />
                   <div>
@@ -378,17 +370,17 @@ function Main() {
           Copyright © 2024. All rights are reserved
         </h4>
         <div className="flex gap-6 lg:gap-12 xl:gap-16 2xl:gap-32 justify-evenly">
-          <a href="http://www.linkedin.com/in/yagopb">
+          <a href="http://www.linkedin.com/in/yagopb" target="_blank" rel="noopener noreferrer">
             <img
               className="ts-icons duration-700"
-              src="./assets/icons/icons8-linkedin-96.png"
+              src={linkedinIcon}
               alt="linkedin"
             />
           </a>
-          <a href="http://github.com/Pletus">
+          <a href="http://github.com/Pletus"  target="_blank" rel="noopener noreferrer">
             <img
               className="ts-icons duration-700"
-              src="./assets/icons/icons8-github-96.png"
+              src={githubIcon}
               alt="github"
             />
           </a>
