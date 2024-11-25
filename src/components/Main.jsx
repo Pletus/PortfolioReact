@@ -1,4 +1,14 @@
 import React from "react";
+import myFoto from "../assets/imgs/Photo 2.jpg";
+import htmlIcon from "../assets/icons/html-5-svgrepo-com.svg";
+import cssIcon from "../assets/icons/css-3-svgrepo-com.svg";
+import javaScriptIcon from "../assets/icons/javascript-svgrepo-com.svg";
+import reactIcon from "../assets/icons/react-svgrepo-com.svg";
+import nodeIcon from "../assets/icons/Node.js.svg"
+import expressIcon from "../assets/icons/Express.svg";
+import tailwindIcon from "../assets/icons/tailwind-svgrepo-com.svg"
+import mongoIcon from "../assets/icons/mongodb-svgrepo-com.svg";
+import "../App.css";
 
 function Main() {
   return (
@@ -24,7 +34,7 @@ function Main() {
           <div className="w-full md:w-1/2 lg:1/2 flex items-center justify-center">
             <img
               className="size-1/2 md:size-3/4 lg:size-72 foto"
-              src="./assets/imgs/Photo 2.jpg"
+              src={myFoto}
               alt="Yago´s Photo"
             />
             <br />
@@ -35,48 +45,48 @@ function Main() {
           <div className="flex gap-4 lg:gap-8 md:gap-8">
             <img
               className="ts-icons duration-500"
-              src="./assets/icons/html-5-svgrepo-com.svg"
+              src={htmlIcon}
               alt="HTML"
             />
             <img
               className="ts-icons duration-500"
-              src="./assets/icons/css-3-svgrepo-com.svg"
+              src={cssIcon}
               alt="CSS"
             />
           </div>
           <div className="flex gap-4 lg:gap-8 md:gap-8">
             <img
               className="ts-icons duration-500"
-              src="./assets/icons/javascript-svgrepo-com.svg"
+              src={javaScriptIcon}
               alt="JavaScript"
             />
             <img
               className="ts-icons duration-500"
-              src="./assets/icons/react-svgrepo-com.svg"
+              src={reactIcon}
               alt="React"
             />
           </div>
           <div className="flex gap-4 lg:gap-8 md:gap-8">
             <img
               className="ts-icons duration-500"
-              src="./assets/icons/Node.js.svg"
+              src={nodeIcon}
               alt="Node"
             />
             <img
               className="ts-icons duration-500"
-              src="./assets/icons/Express.svg"
+              src={expressIcon}
               alt="Express"
             />
           </div>
           <div className="flex gap-4 lg:gap-8 md:gap-8">
             <img
               className="ts-icons duration-500"
-              src="./assets/icons/tailwind-svgrepo-com.svg"
+              src={tailwindIcon}
               alt="Tailwind"
             />
             <img
               className="ts-icons duration-500"
-              src="./assets/icons/mongodb-svgrepo-com.svg"
+              src={mongoIcon}
               alt="MongoDB"
             />
           </div>
@@ -104,7 +114,7 @@ function Main() {
             technologies like Node.js, Express, and databases such as MySQL and
             MongoDB.
           </p>
-        </div>
+        </div>  
         <div className="border-b-2 pt-28 border-black"></div>
         <div className="my-16 md:my-0 lg:my-0 mx-0 md:mx-12 lg:mx-32 divider2"></div>
         <div className="flex justify-center items-center pb-28 md:pb-0 lg:pb-0 xl:pb-0 2xl:pb-0 md:w-1/2 lg:w-1/2 xl:w-1/2 2xl:w-1/2 relative">

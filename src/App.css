@@ -1,6 +1,114 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+.nav {
+  height: auto;
+  width: auto;
+}
+
+body {
+  height: auto;
+  width: auto;
+  background-color: #fbf7ef;
+}
+
+.logo {
+  font-family: "Mitr", cursive;
+  color: black;
+  display: inline-flex;
+  align-self: center;
+}
+
+.navlinks {
+  font-family: "Mitr", sans-serif;
+  color: black;
+  font-size: large;
+}
+
+.img-responsive {
+  width: 100%; /* La imagen se ajusta al 100% del ancho del contenedor */
+  height: auto; /* Mantiene la proporción de la imagen */
+  max-width: 100%; /* No excede el 100% del contenedor */
+  object-fit: cover; /* Mantiene la imagen bien encajada */
+  border-radius: 8px; /* Opcional: bordes redondeados */
+  transition: all 0.3s ease; /* Transición suave al redimensionar */
+}
+
+@media (min-width: 768px) {
+  .img-responsive {
+    max-width: 75%; /* Límite de ancho en pantallas medianas */
+  }
+}
+
+@media (min-width: 1024px) {
+  .img-responsive {
+    max-width: 90%; /* Límite de ancho en pantallas grandes */
+  }
+}
+
+.complex-shadow {
+  box-shadow: 0 0px 5px rgba(0, 0, 0, 0.5), inset 0 -1px 1px #000000;
+}
+
+.ts-icons {
+  width: 50px;
+  height: 50px;
+  transition: transform 0.3s ease;
+}
+
+.ts-icons:hover {
+  transform: scale(1.6);
+}
+
+.h3 {
+  font-family: "Mitr", sans-serif;
+}
+
+.divider2 {
+  width: 2px;
+  background-color: #060606;
+  margin: 0 10px;
+}
+
+.foto {
+  border: solid 3px #060606;
+  border-radius: 30%;
+  animation: slide;
+  animation-duration: 8s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+
+.img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.circular-image {
+  border-radius: 50%;
+  overflow: hidden;
+  animation: spin 12s linear infinite;
+}
+
+@keyframes slide {
+  0% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+  50% {
+    border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+  }
+  100% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
