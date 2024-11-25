@@ -16,72 +16,73 @@ import "../App.css";
 
 function Main() {
   return (
-    <>
-      <section className="w-full min-h-lvh flex flex-col md:flex-col lg:flex-col xl:flex-col p-4 pt-12 md:p-20 lg:p-40 xl:px-80 2xl:px-96 justify-center">
-        <div className="flex flex-col-reverse md:flex-row lg:flex-row gap-2 md:gap-0 lg:gap-0">
-          <div className="md:w-1/2 lg:1/2 flex flex-col justify-center">
-            <div className="">
-              <h1 className="text-black navlinks text-5xl text-center md:text-left lg:text-left">
-                Full-Stack Web Developer
-              </h1>
-            </div>
-            <br />
+    <div>
+      <section className="max-w-4xl px-8 mx-auto flex flex-row p-4 justify-center">
+        <div className="flex flex-col gap-2 md:gap-0 lg:gap-0">
+          <div>
+            <h1 className="text-black navlinks text-5xl text-center md:text-left lg:text-left">
+              Full-Stack Web Developer
+            </h1>
             <div className="">
               <p className="text-black h3 text-lg text-center md:text-left lg:text-left">
-                Greetings, I'm Yago, a web developer based in Berlin, committed
-                to deliver high-quality websites.
+                Hi, I'm Yago, a Berlin-based web developer, focused on
+                delivering high-quality websites.
               </p>
             </div>
-            <br />
           </div>
-          <br />
-          <div className="w-full md:w-1/2 lg:1/2 flex items-center justify-center">
-            <img
-              className="size-1/2 md:size-3/4 lg:size-72 foto"
-              src={myFoto}
-              alt="Yago´s Photo"
-            />
-            <br />
+          <div className="flex flex-wrap gap-4 lg:gap-8 md:gap-8 pl-0 md:pl-4 lg:pl-4 pt-2 md:pt-4 lg:pt-4 justify-center lg:justify-start md:justify-start">
+            <div className="flex gap-4 lg:gap-8 md:gap-8">
+              <img
+                className="ts-icons duration-500"
+                src={htmlIcon}
+                alt="HTML"
+              />
+              <img className="ts-icons duration-500" src={cssIcon} alt="CSS" />
+            </div>
+            <div className="flex gap-4 lg:gap-8 md:gap-8">
+              <img
+                className="ts-icons duration-500"
+                src={javaScriptIcon}
+                alt="JavaScript"
+              />
+              <img
+                className="ts-icons duration-500"
+                src={reactIcon}
+                alt="React"
+              />
+            </div>
+            <div className="flex gap-4 lg:gap-8 md:gap-8">
+              <img
+                className="ts-icons duration-500"
+                src={nodeIcon}
+                alt="Node"
+              />
+              <img
+                className="ts-icons duration-500"
+                src={expressIcon}
+                alt="Express"
+              />
+            </div>
+            <div className="flex gap-4 lg:gap-8 md:gap-8">
+              <img
+                className="ts-icons duration-500"
+                src={tailwindIcon}
+                alt="Tailwind"
+              />
+              <img
+                className="ts-icons duration-500"
+                src={mongoIcon}
+                alt="MongoDB"
+              />
+            </div>
           </div>
         </div>
-        <br />
-        <div className="flex flex-wrap gap-4 lg:gap-8 md:gap-8 pl-0 md:pl-4 lg:pl-4 pt-2 md:pt-4 lg:pt-4 justify-center lg:justify-start md:justify-start">
-          <div className="flex gap-4 lg:gap-8 md:gap-8">
-            <img className="ts-icons duration-500" src={htmlIcon} alt="HTML" />
-            <img className="ts-icons duration-500" src={cssIcon} alt="CSS" />
-          </div>
-          <div className="flex gap-4 lg:gap-8 md:gap-8">
-            <img
-              className="ts-icons duration-500"
-              src={javaScriptIcon}
-              alt="JavaScript"
-            />
-            <img
-              className="ts-icons duration-500"
-              src={reactIcon}
-              alt="React"
-            />
-          </div>
-          <div className="flex gap-4 lg:gap-8 md:gap-8">
-            <img className="ts-icons duration-500" src={nodeIcon} alt="Node" />
-            <img
-              className="ts-icons duration-500"
-              src={expressIcon}
-              alt="Express"
-            />
-          </div>
-          <div className="flex gap-4 lg:gap-8 md:gap-8">
-            <img
-              className="ts-icons duration-500"
-              src={tailwindIcon}
-              alt="Tailwind"
-            />
-            <img
-              className="ts-icons duration-500"
-              src={mongoIcon}
-              alt="MongoDB"
-            />
-          </div>
+        <div className="md:w-1/2 lg:1/2 flex items-center justify-center">
+          <img
+            className="size-1/2 md:size-3/4 lg:size-72 foto"
+            src={myFoto}
+            alt="Yago´s Photo"
+          />
         </div>
       </section>
       <br />
@@ -92,192 +93,6 @@ function Main() {
         <h5 className="text-black h3 mb-20 lg:mb-4 text-4xl pt-4 pl-0 md:pl-2 lg:pl-3 text-center md:text-left lg:text-left">
           Projects
         </h5>
-        <div className="flex flex-col gap-24 items-center justify-center py-4 md:py-20 lg:py-20">
-          <a href="https://freebie-it.netlify.app/">
-            <img
-              src="./assets/imgs/Freebie It.png"
-              alt="Freebie It"
-              className="complex-shadow"
-            />
-          </a>
-          <a href="https://cute-crostata-59eac6.netlify.app/">
-            <img
-              src="./assets/imgs/Pokefights.png"
-              alt="Pokefights"
-              className="complex-shadow"
-            />
-          </a>
-        </div>
-        <h3 className="pb-2 mt-20 md:mt-0 md:pb-12 justify-center text-black h3 mb-20 lg:mb-4 text-4xl pt-4 pl-0 md:pl-2 lg:pl-3 text-center md:text-left lg:text-left">
-          On GitHub
-        </h3>
-        <div className="flex flex-wrap justify-evenly items-center gap-8 md:gap-24">
-          <div className="bg-white complex-shadow w-72 flex flex-col justify-center items-center">
-            <a href="https://github.com/Pletus/FirstTypeScriptApp">
-              <img
-                src="./assets/imgs/projectManager.png"
-                alt="project management"
-                className="w-full h-48 object-cover"
-              />
-            </a>
-            <label
-              htmlFor="project management"
-              className="justify-center text-black h3 lg:mb-4 pt-4 text-center"
-            >
-              Project Manager App - TypeScript
-            </label>
-          </div>
-          <div className="bg-white complex-shadow w-72 flex flex-col justify-center items-center">
-            <a href="https://github.com/Pletus/authorization">
-              <img
-                src="./assets/imgs/autho.png"
-                alt="authentication"
-                className="w-full h-48 object-cover"
-              />
-            </a>
-            <label
-              htmlFor="authentication"
-              className="justify-center text-black h3 lg:mb-4 pt-4 text-center"
-            >
-              Authentication - JS | React | Express | MongoDB
-            </label>
-          </div>
-          <div className="bg-white complex-shadow w-72 flex flex-col justify-center items-center">
-            <a href="https://github.com/Pletus/cookbook-with-SQL">
-              <img
-                src="./assets/imgs/cook PgSQL.png"
-                alt="cookbook PgSQL"
-                className="w-full h-48 object-cover"
-              />
-            </a>
-            <label
-              htmlFor="cookbook PgSQL"
-              className="text-black h3 lg:mb-4 pt-4 text-center"
-            >
-              Cook Book - JS | React | Express | PgSQL
-            </label>
-          </div>
-          <div className="bg-white complex-shadow w-72 flex flex-col justify-center items-center">
-            <a href="https://github.com/Pletus/Adopt_a_pet">
-              <img
-                src="./assets/imgs/adopt_a_pet.png"
-                alt="adopt_a_pet"
-                className="w-full h-48 object-cover p-4"
-              />
-            </a>
-            <label
-              htmlFor="adopt_a_pet"
-              className="justify-center text-black h3 lg:mb-4 pt-4 text-center"
-            >
-              Adopt a pet - Node | Express
-            </label>
-          </div>
-          <div className="bg-white complex-shadow w-72 flex flex-col justify-center items-center">
-            <a href="https://github.com/Pletus/FromContentfulToNodeJS">
-              <img
-                src="./assets/imgs/contentToNode.png"
-                alt="contentToNode"
-                className="w-full h-48 object-cover p-4"
-              />
-            </a>
-            <label
-              htmlFor="contentToNode"
-              className="justify-center text-black h3 lg:mb-4 pt-4 text-center"
-            >
-              From contentful to Node.js
-            </label>
-          </div>
-          <div className="bg-white complex-shadow w-72 flex flex-col justify-center items-center">
-            <a href="https://github.com/Pletus/Fetch-Project">
-              <img
-                src="./assets/imgs/hacker news.png"
-                alt="hacker news"
-                className="w-full h-48 object-cover"
-              />
-            </a>
-            <label
-              htmlFor="hacker news"
-              className="justify-center text-black h3 lg:mb-4 pt-4 text-center"
-            >
-              Hacker news - JS | React | Tailwind
-            </label>
-          </div>
-          <div className="bg-white complex-shadow w-72 flex flex-col justify-center items-center">
-            <a href="https://github.com/Pletus/CookBook">
-              <img
-                src="./assets/imgs/cookbook.png"
-                alt="cookbook"
-                className="w-full h-48 object-cover"
-              />
-            </a>
-            <label
-              htmlFor="cookbook"
-              className="justify-center text-black h3 lg:mb-4 pt-4 text-center"
-            >
-              Cook Book - JS | React | Contentful
-            </label>
-          </div>
-          <div className="bg-white complex-shadow w-72 flex flex-col justify-center items-center">
-            <a href="https://github.com/Pletus/ToDo-React">
-              <img
-                src="./assets/imgs/ToDo2.png"
-                alt="to do list"
-                className="w-full h-48 object-cover"
-              />
-            </a>
-            <label
-              htmlFor="to do list react"
-              className="justify-center text-black h3 lg:mb-4 pt-4 text-center"
-            >
-              To Do List - JS | React | LocalStorage
-            </label>
-          </div>
-          <div className="bg-white complex-shadow w-72 flex flex-col justify-center items-center">
-            <a href="https://github.com/Pletus/To-Do-List">
-              <img
-                src="./assets/imgs/ToDo1.png"
-                alt="todo list js"
-                className="w-full h-48 object-cover"
-              />
-            </a>
-            <label
-              htmlFor="todo list js"
-              className="justify-center text-black h3 lg:mb-4 pt-4 text-center"
-            >
-              Todo List - JS | LocalStorage
-            </label>
-          </div>
-          <div className="bg-white complex-shadow w-72 flex flex-col justify-center items-center">
-            <a href="https://github.com/Pletus/Cook-book">
-              <img
-                src="./assets/imgs/cook-book.png"
-                alt="Cook-book"
-                className="w-full h-48 object-cover"
-              />
-            </a>
-            <label
-              htmlFor="Cook-book"
-              className="justify-center text-black h3 lg:mb-4 pt-4 text-center"
-            >
-              Cook Book - HTML | CSS
-            </label>
-          </div>
-          <div className="bg-white complex-shadow w-72 flex flex-col justify-center items-center">
-            <a href="https://github.com/Pletus/PSDtoHTML">
-              <img
-                src="./assets/imgs/PSDtoHTML.png"
-                alt="PSDtoHTML"
-                className="w-full h-48 object-cover"
-              />
-            </a>
-            <label
-              htmlFor="PSDtoHTML"
-              className="justify-center text-black h3 lg:mb-4 pt-4 text-center"
-            >
-              PSD to HTML
-            </label>
-          </div>
-        </div>
       </section>
       <section
         id="about"
@@ -370,14 +185,22 @@ function Main() {
           Copyright © 2024. All rights are reserved
         </h4>
         <div className="flex gap-6 lg:gap-12 xl:gap-16 2xl:gap-32 justify-evenly">
-          <a href="http://www.linkedin.com/in/yagopb" target="_blank" rel="noopener noreferrer">
+          <a
+            href="http://www.linkedin.com/in/yagopb"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img
               className="ts-icons duration-700"
               src={linkedinIcon}
               alt="linkedin"
             />
           </a>
-          <a href="http://github.com/Pletus"  target="_blank" rel="noopener noreferrer">
+          <a
+            href="http://github.com/Pletus"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img
               className="ts-icons duration-700"
               src={githubIcon}
@@ -386,7 +209,7 @@ function Main() {
           </a>
         </div>
       </footer>
-    </>
+    </div>
   );
 }
 

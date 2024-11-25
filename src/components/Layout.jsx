@@ -5,11 +5,11 @@ import "../App.css";
 
 function Layout() {
   return (
-    <>
+    <div className="flex flex-col justify-center">
       <nav className="nav-border complex-shadow md:flex md:items-center nav md:justify-between bg-white p-4 md:p-6 lg:p-6 items-center relative">
         <div className="flex justify-between items-center">
           <span>
-            <h4 className="logo text-xl md:text-3xl lg:text-3xl pl-2 md:pl-6 lg:pl-8 xl:pl-12 2xl:pl-20">
+            <h4 className="logo text-xl md:text-3xl lg:text-3xl">
               Yago Pazos
             </h4>
           </span>
@@ -53,7 +53,7 @@ function Layout() {
         </ul>
       </nav>
       <Outlet />
-    </>
+    </div>
   );
 }
 
