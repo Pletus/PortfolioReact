@@ -5,10 +5,10 @@ import "../App.css";
 function Layout() {
   return (
     <div className="flex flex-col justify-center">
-      <nav className="md:flex md:items-center md:justify-between bg-white px-4 md:px-16 py-4 items-center relative">
+      <nav className="md:flex md:items-center md:justify-between bg-white px-4 md:px-16 nav items-center relative">
         <div className="flex justify-between items-center">
           <span>
-            <h4 className="logo text-xl md:text-3xl lg:text-3xl">Yago Pazos</h4>
+            <h4 className="logo text-xl md:text-3xl lg:text-xl">Yago Pazos</h4>
           </span>
           <span className="text-3xl cursor-pointer mx-2 md:hidden block">
             <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
@@ -20,7 +20,7 @@ function Layout() {
               className="navlinks inline-block transform transition-transform duration-300 hover:scale-110"
               href="/"
             >
-              home
+              Home
             </a>
           </li>
           <li>
@@ -28,7 +28,7 @@ function Layout() {
               className="navlinks inline-block transform transition-transform duration-300 hover:scale-110"
               href="#projects"
             >
-              projects
+              Projects
             </a>
           </li>
           <li>
@@ -36,7 +36,7 @@ function Layout() {
               className="navlinks inline-block transform transition-transform duration-300 hover:scale-110"
               href="#about"
             >
-              about
+              About
             </a>
           </li>
           <li>
@@ -44,7 +44,7 @@ function Layout() {
               className="navlinks inline-block transform transition-transform duration-300 hover:scale-110"
               href="#contact"
             >
-              contact
+              Contact
             </a>
           </li>
         </ul>

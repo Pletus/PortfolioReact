@@ -4,6 +4,10 @@ body {
   background-color: #fbf7ef;
 }
 
+.nav {
+  height: 3.6rem;
+}
+
 .logo {
   font-family: "Mitr", cursive;
   color: black;
@@ -14,7 +18,11 @@ body {
 .navlinks {
   font-family: "Mitr", sans-serif;
   color: black;
-  font-size: large;
+  font-size: small;
+}
+
+.radius {
+  border-radius: 11px;
 }
 
 .img-responsive {
@@ -38,14 +46,15 @@ body {
   }
 }
 
-.complex-shadow {
-  box-shadow: 0 0px 5px rgba(0, 0, 0, 0.5), inset 0 -1px 1px #000000;
+.ts-icons {
+  width: 22px;
+  height: 22px;
+  transition: transform 0.3s ease;
 }
 
-.ts-icons {
-  width: 32px;
-  height: 32px;
-  transition: transform 0.3s ease;
+.external-link-icon {
+  width: 16px;
+  height: 16px;
 }
 
 .ts-icons:hover {

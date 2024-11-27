@@ -12,23 +12,24 @@ import githubIcon from "../assets/icons/icons8-github-96.png";
 import linkedinIcon from "../assets/icons/icons8-linkedin-96.png";
 import emailIcon from "../assets/icons/gmail.png";
 import pinIcon from "../assets/icons/pin.png";
+import linkIcon from "../assets/icons/external-link-svgrepo-com.svg";
 import "../App.css";
 
 function Main() {
   return (
     <div>
-      <section className="max-w-4xl px-8 mx-auto flex flex-col md:flex-row p-4 justify-center mt-4 md:mt-20 mb-4 md:mb-32">
-        <div className="flex flex-col gap-2 mt-12">
-          <div>
-            <h1 className="text-black navlinks text-5xl text-center md:text-left lg:text-left">
+      <section className="max-w-2xl px-6 mx-auto flex flex-col md:flex-row p-4 justify-center mt-3 md:mt-14 mb-4 md:mb-32">
+        <div className="flex flex-col gap-2 mt-4">
+          <div className="p-2">
+            <h1 className="text-black navlinks text-4xl text-center md:text-left lg:text-left">
               Full-Stack Web Developer
             </h1>
-            <p className="md:max-w-md text-black h3 text-lg text-left mt-7">
+            <p className="md:max-w-80 text-sm text-black h3 text-left mt-4">
               Hi, I'm Yago, a Berlin-based web developer, focused on delivering
               high-quality websites.
             </p>
           </div>
-          <div className="flex flex-wrap mt-12 gap-4">
+          <div className="flex flex-wrap p-2 mt-6 gap-4">
             <div className="flex gap-4">
               <img
                 className="ts-icons duration-500"
@@ -75,32 +76,52 @@ function Main() {
             </div>
           </div>
         </div>
-        <div className="flex items-center justify-end max-w-80">
-          <img
-            className="foto"
-            src={myFoto}
-            alt="Yago´s Photo"
-          />
+        <div className="flex items-center justify-end max-w-60">
+          <img className="foto" src={myFoto} alt="Yago´s Photo" />
         </div>
       </section>
       <section
         id="projects"
         className="w-full bg-white about flex flex-col justify-center"
       >
-        <div className="max-w-4xl px-8 mx-auto">
-          <h5 className="text-black h3 mb-20 lg:mb-4 text-4xl pt-4 pl-0 md:pl-2 lg:pl-3 text-left">
+        <div className="max-w-2xl px-8 pt-12 mx-auto">
+          <h5 className="text-black h3 mb-20 lg:mb-4 text-4xl pt-4 text-left">
             Projects
           </h5>
-          <img
-            className="w-auto"
-            src="https://i.imgur.com/hM0ekoc.jpeg"
-            alt="Freebie It Project"
-          />
-          <img
-            className="w-auto"
-            src="https://i.imgur.com/oQXtf7J.png"
-            alt="Pokemon Project"
-          />
+          <div className="image-container">
+            <img
+              className="mt-12 radius projectImage1"
+              src="https://i.imgur.com/FhK9YTY.png"
+              alt="Freebie It Project"
+            />
+          </div>
+          <div className="flex items-center">
+            <h4 className="text-black h3 text-2xl">Reduce, Reuse, Rehome</h4>
+            <img className="external-link-icon" src={linkIcon} alt="link icon" />
+            <a className="text-black h3" href="">open website</a>
+          </div>
+          <p className="text-black h3 text-sm">
+            A social network built with the MERN Stack, enabling users to share
+            and discover locations where unwanted items are left on the street
+            for reuse, promoting sustainability and reducing waste.
+          </p>
+          <div>
+            <img
+              className="w-auto radius"
+              src="https://i.imgur.com/GhljBxr.png"
+              alt="Pokemon Project"
+            />
+          </div>
+          <div>
+            <h4>Find your Pokemon!</h4>
+            <img className="external-link-icon" src={linkIcon} alt="link icon" />
+            <a href="">open website</a>
+          </div>
+          <span>
+            A Pokémon battle and Pokédex search app built with React, Node.js,
+            Tailwind CSS, and PostgreSQL. Users can explore Pokémon details,
+            simulate battles, and enjoy a dynamic, interactive interface.
+          </span>
         </div>
       </section>
       <section
