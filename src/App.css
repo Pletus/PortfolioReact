@@ -1,8 +1,3 @@
-.nav {
-  height: auto;
-  width: auto;
-}
-
 body {
   height: auto;
   width: auto;
@@ -48,8 +43,8 @@ body {
 }
 
 .ts-icons {
-  width: 50px;
-  height: 50px;
+  width: 32px;
+  height: 32px;
   transition: transform 0.3s ease;
 }
 
@@ -68,7 +63,7 @@ body {
 }
 
 .foto {
-  border: solid 3px #060606;
+  border: solid 3.15px #060606;
   border-radius: 30%;
   animation: slide;
   animation-duration: 8s;

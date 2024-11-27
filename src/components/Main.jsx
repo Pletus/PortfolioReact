@@ -17,21 +17,19 @@ import "../App.css";
 function Main() {
   return (
     <div>
-      <section className="max-w-4xl px-8 mx-auto flex flex-row p-4 justify-center">
-        <div className="flex flex-col gap-2 md:gap-0 lg:gap-0">
+      <section className="max-w-4xl px-8 mx-auto flex flex-col md:flex-row p-4 justify-center mt-4 md:mt-20 mb-4 md:mb-32">
+        <div className="flex flex-col gap-2 mt-12">
           <div>
             <h1 className="text-black navlinks text-5xl text-center md:text-left lg:text-left">
               Full-Stack Web Developer
             </h1>
-            <div className="">
-              <p className="text-black h3 text-lg text-center md:text-left lg:text-left">
-                Hi, I'm Yago, a Berlin-based web developer, focused on
-                delivering high-quality websites.
-              </p>
-            </div>
+            <p className="md:max-w-md text-black h3 text-lg text-left mt-7">
+              Hi, I'm Yago, a Berlin-based web developer, focused on delivering
+              high-quality websites.
+            </p>
           </div>
-          <div className="flex flex-wrap gap-4 lg:gap-8 md:gap-8 pl-0 md:pl-4 lg:pl-4 pt-2 md:pt-4 lg:pt-4 justify-center lg:justify-start md:justify-start">
-            <div className="flex gap-4 lg:gap-8 md:gap-8">
+          <div className="flex flex-wrap mt-12 gap-4">
+            <div className="flex gap-4">
               <img
                 className="ts-icons duration-500"
                 src={htmlIcon}
@@ -39,7 +37,7 @@ function Main() {
               />
               <img className="ts-icons duration-500" src={cssIcon} alt="CSS" />
             </div>
-            <div className="flex gap-4 lg:gap-8 md:gap-8">
+            <div className="flex gap-4">
               <img
                 className="ts-icons duration-500"
                 src={javaScriptIcon}
@@ -51,7 +49,7 @@ function Main() {
                 alt="React"
               />
             </div>
-            <div className="flex gap-4 lg:gap-8 md:gap-8">
+            <div className="flex gap-4">
               <img
                 className="ts-icons duration-500"
                 src={nodeIcon}
@@ -63,7 +61,7 @@ function Main() {
                 alt="Express"
               />
             </div>
-            <div className="flex gap-4 lg:gap-8 md:gap-8">
+            <div className="flex gap-4">
               <img
                 className="ts-icons duration-500"
                 src={tailwindIcon}
@@ -77,22 +75,33 @@ function Main() {
             </div>
           </div>
         </div>
-        <div className="md:w-1/2 lg:1/2 flex items-center justify-center">
+        <div className="flex items-center justify-end max-w-80">
           <img
-            className="size-1/2 md:size-3/4 lg:size-72 foto"
+            className="foto"
             src={myFoto}
             alt="Yago´s Photo"
           />
         </div>
       </section>
-      <br />
       <section
         id="projects"
-        className="w-full bg-white min-h-lvh py-20 about flex flex-col md:flex-col lg:flex-col xl:flex-col p-4 px-10 md:px-20 lg:px-40 xl:px-80 2xl:px-96 justify-center"
+        className="w-full bg-white about flex flex-col justify-center"
       >
-        <h5 className="text-black h3 mb-20 lg:mb-4 text-4xl pt-4 pl-0 md:pl-2 lg:pl-3 text-center md:text-left lg:text-left">
-          Projects
-        </h5>
+        <div className="max-w-4xl px-8 mx-auto">
+          <h5 className="text-black h3 mb-20 lg:mb-4 text-4xl pt-4 pl-0 md:pl-2 lg:pl-3 text-left">
+            Projects
+          </h5>
+          <img
+            className="w-auto"
+            src="https://i.imgur.com/hM0ekoc.jpeg"
+            alt="Freebie It Project"
+          />
+          <img
+            className="w-auto"
+            src="https://i.imgur.com/oQXtf7J.png"
+            alt="Pokemon Project"
+          />
+        </div>
       </section>
       <section
         id="about"
@@ -103,7 +112,7 @@ function Main() {
             About
           </h5>
           <br />
-          <h5 className="text-black h3 text-lg text-xl pt-4 text-center md:text-left lg:text-left">
+          <h5 className="text-black h3 text-xl pt-4 text-center md:text-left lg:text-left">
             Full-Stack Developer based in Berlin
           </h5>
           <br />
