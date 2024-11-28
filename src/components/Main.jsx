@@ -106,7 +106,12 @@ function Main() {
                 src={linkIcon}
                 alt="link icon"
               />
-              <a className="text-black text-sm h3" href="">
+              <a
+                className="text-black text-sm h3"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://freebie-it.netlify.app/"
+              >
                 open website
               </a>
             </div>
@@ -131,7 +136,12 @@ function Main() {
                 src={linkIcon}
                 alt="link icon"
               />
-              <a className="text-black text-sm h3" href="">
+              <a
+                className="text-black text-sm h3"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://cute-crostata-59eac6.netlify.app/"
+              >
                 open website
               </a>
             </div>
@@ -166,80 +176,82 @@ function Main() {
         </div>
       </section>
       <section id="contact" className="bg-white w-full">
-        <div className="max-w-2xl px-7 pt-12 pb-12 mx-auto">
+        <div className="max-w-2xl px-7 pt-12 pb-20 mx-auto">
           <h5 className="text-black h3 mb-20 lg:mb-4 text-4xl pt-4 text-left">
             Say hi!
           </h5>
-          <div className="flex flex-col md:flex-row justify-between">
+          <div className="flex flex-col md:flex-row justify-between pt-3">
             <div className="flex flex-col">
               <img
-                className="ts-icons duration-700"
+                className="ts-icons2 duration-700"
                 src={emailIcon}
                 alt="E-mail"
               />
-              <h6 className="text-black h3 text-md pt-4 text-left font-semibold">
-                Mail
+              <h6 className="text-black h3 text-md pt-3 text-left font-medium text-sm">
+                Write to:
               </h6>
-              <p className="text-black h3 text-md pt-4 text-left">
+              <p className="text-black h3 text-md text-sm text-left">
                 yagopb@gmail.com
               </p>
             </div>
             <div>
               <img
-                className="ts-icons duration-700"
+                className="ts-icons2 duration-700"
                 src={linkedinIcon2}
                 alt="Linkedin"
               />
-              <h6 className="text-black h3 text-md pt-4 text-left font-semibold">
-                Mail
+              <h6 className="text-black h3 text-md pt-3 text-left font-medium text-sm">
+                Find me at:
               </h6>
-              <p className="text-black h3 text-md pt-4 text-left">
+              <p className="text-black h3 text-md text-sm text-left">
                 yagopb@gmail.com
               </p>
             </div>
             <div>
               <img
-                className="ts-icons duration-700"
+                className="ts-icons2 duration-700"
                 src={mapsIcon}
                 alt="Location"
               />
-              <h6 className="text-black h3 text-md pt-4 text-left font-semibold">
-                Location
+              <h6 className="text-black h3 text-md pt-3 text-left font-medium text-sm">
+                Located at:
               </h6>
-              <p className="text-black h3 text-md pt-4 text-left">
+              <p className="text-black h3 text-md text-sm text-left">
                 Berlin, Germany
               </p>
             </div>
           </div>
         </div>
       </section>
-      <footer className="bg-black flex flex-col-reverse md:flex-row lg:flex-row justify-between p-12 lg:px-48 md:p-20 xl:px-80 2xl:px-96 pb-2 sm:pb-4 w-full">
-        <h4 className="text-white h3 text-md pt-4 text-center md:text-left lg:text-left">
-          Copyright © 2024. All rights are reserved
-        </h4>
-        <div className="flex gap-6 lg:gap-12 xl:gap-16 2xl:gap-32 justify-evenly">
-          <a
-            href="http://www.linkedin.com/in/yagopb"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              className="ts-icons duration-700"
-              src={linkedinIcon}
-              alt="linkedin"
-            />
-          </a>
-          <a
-            href="http://github.com/Pletus"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              className="ts-icons duration-700"
-              src={githubIcon}
-              alt="github"
-            />
-          </a>
+      <footer className="bg-black">
+        <div className="max-w-2xl px-7 pt-20 pb-20 mx-auto flex justify-between items-center flex-col md:flex-row">
+          <h4 className="text-white h3 text-sm text-center md:text-left lg:text-left">
+            Copyright © 2024. All rights are reserved
+          </h4>
+          <div className="flex gap-4">
+            <a
+              href="http://www.linkedin.com/in/yagopb"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                className="ts-icons duration-700"
+                src={linkedinIcon}
+                alt="linkedin"
+              />
+            </a>
+            <a
+              href="http://github.com/Pletus"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                className="ts-icons duration-700"
+                src={githubIcon}
+                alt="github"
+              />
+            </a>
+          </div>
         </div>
       </footer>
     </div>

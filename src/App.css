@@ -56,6 +56,12 @@ body {
   transition: transform 0.3s ease;
 }
 
+.ts-icons2 {
+  width: 16px;
+  height: 16px;
+  transition: transform 0.3s ease;
+}
+
 .external-link-icon {
   width: 15px;
   height: 15px;
