@@ -10,8 +10,9 @@ import tailwindIcon from "../assets/icons/tailwind-svgrepo-com.svg";
 import mongoIcon from "../assets/icons/mongodb-svgrepo-com.svg";
 import githubIcon from "../assets/icons/icons8-github-96.png";
 import linkedinIcon from "../assets/icons/icons8-linkedin-96.png";
+import linkedinIcon2 from "../assets/icons/linkedin2.png";
 import emailIcon from "../assets/icons/gmail.png";
-import pinIcon from "../assets/icons/pin.png";
+import mapsIcon from "../assets/icons/google-maps2.png";
 import linkIcon from "../assets/icons/external-link-svgrepo-com.svg";
 import "../App.css";
 
@@ -144,7 +145,7 @@ function Main() {
       </section>
       <section
         id="about"
-        className="w-full about flex flex-col justify-center items-center"
+        className="w-full flex flex-col justify-center items-center"
       >
         <div className="max-w-2xl px-7 pt-12 mb-28 mx-auto">
           <h5 className="text-black h3 mb-20 lg:mb-4 text-4xl pt-4 text-left">
@@ -164,31 +165,52 @@ function Main() {
           />
         </div>
       </section>
-      <section
-        id="contact"
-        className="bg-white w-full"
-      >
-        <div className="max-w-2xl px-7 mx-auto">
-          <h5 className="text-black h3 text-4xl pt-4 text-center md:text-left">
-            Contact
+      <section id="contact" className="bg-white w-full">
+        <div className="max-w-2xl px-7 pt-12 pb-12 mx-auto">
+          <h5 className="text-black h3 mb-20 lg:mb-4 text-4xl pt-4 text-left">
+            Say hi!
           </h5>
-          <h4 className="pt-20 text-black h3 text-md pt-4 text-center md:text-left">
-            I'd love to hear from you!
-          </h4>
-          <img className="ts-icons duration-700" src={pinIcon} alt="Location" />
-          <h6 className="text-black h3 text-md pt-4 text-left font-semibold">
-            Location
-          </h6>
-          <p className="text-black h3 text-md pt-4 text-left">
-            Berlin, Germany
-          </p>
-          <img className="ts-icons duration-700" src={emailIcon} alt="E-mail" />
-          <h6 className="text-black h3 text-md pt-4 text-left font-semibold">
-            Mail
-          </h6>
-          <p className="text-black h3 text-md pt-4 text-left">
-            yagopb@gmail.com
-          </p>
+          <div className="flex flex-col md:flex-row justify-between">
+            <div className="flex flex-col">
+              <img
+                className="ts-icons duration-700"
+                src={emailIcon}
+                alt="E-mail"
+              />
+              <h6 className="text-black h3 text-md pt-4 text-left font-semibold">
+                Mail
+              </h6>
+              <p className="text-black h3 text-md pt-4 text-left">
+                yagopb@gmail.com
+              </p>
+            </div>
+            <div>
+              <img
+                className="ts-icons duration-700"
+                src={linkedinIcon2}
+                alt="Linkedin"
+              />
+              <h6 className="text-black h3 text-md pt-4 text-left font-semibold">
+                Mail
+              </h6>
+              <p className="text-black h3 text-md pt-4 text-left">
+                yagopb@gmail.com
+              </p>
+            </div>
+            <div>
+              <img
+                className="ts-icons duration-700"
+                src={mapsIcon}
+                alt="Location"
+              />
+              <h6 className="text-black h3 text-md pt-4 text-left font-semibold">
+                Location
+              </h6>
+              <p className="text-black h3 text-md pt-4 text-left">
+                Berlin, Germany
+              </p>
+            </div>
+          </div>
         </div>
       </section>
       <footer className="bg-black flex flex-col-reverse md:flex-row lg:flex-row justify-between p-12 lg:px-48 md:p-20 xl:px-80 2xl:px-96 pb-2 sm:pb-4 w-full">

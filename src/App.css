@@ -69,12 +69,6 @@ body {
   font-family: "Mitr", sans-serif;
 }
 
-.divider2 {
-  width: 2px;
-  background-color: #060606;
-  margin: 0 10px;
-}
-
 .foto {
   border: solid 3.15px #060606;
   border-radius: 30%;
