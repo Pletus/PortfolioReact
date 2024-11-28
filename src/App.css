@@ -25,6 +25,10 @@ body {
   border-radius: 11px;
 }
 
+.radius2 {
+  border-radius: 16px;
+}
+
 .img-responsive {
   width: 100%;
   height: auto;
@@ -53,8 +57,8 @@ body {
 }
 
 .external-link-icon {
-  width: 16px;
-  height: 16px;
+  width: 15px;
+  height: 15px;
 }
 
 .ts-icons:hover {
