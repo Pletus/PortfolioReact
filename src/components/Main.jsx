@@ -19,8 +19,8 @@ import "../App.css";
 function Main() {
   return (
     <div>
-      <section className="max-w-2xl px-7 mx-auto flex flex-col md:flex-row p-4 justify-center mt-3 md:mt-12 mb-4 md:mb-28">
-        <div className="flex flex-col gap-2 mt-4">
+      <section className="max-w-2xl px-12 md:px-7 mx-auto flex flex-col md:flex-row justify-center items-center mt-24 md:mt-24 mb-10 md:mb-28">
+        <div className="flex flex-col items-center gap-2">
           <div className="p-2">
             <h1 className="text-black navlinks text-4xl text-center md:text-left lg:text-left">
               Full-Stack Web Developer
@@ -30,8 +30,8 @@ function Main() {
               high-quality websites.
             </p>
           </div>
-          <div className="flex flex-wrap p-2 mt-5 gap-4">
-            <div className="flex gap-4">
+          <div className="flex flex-wrap md:p-2 md:mt-5 gap-2 md:gap-4">
+            <div className="flex gap-2 md:gap-4">
               <img
                 className="ts-icons duration-500"
                 src={htmlIcon}
@@ -39,7 +39,7 @@ function Main() {
               />
               <img className="ts-icons duration-500" src={cssIcon} alt="CSS" />
             </div>
-            <div className="flex gap-4">
+            <div className="flex gap-2 md:gap-4">
               <img
                 className="ts-icons duration-500"
                 src={javaScriptIcon}
@@ -51,7 +51,7 @@ function Main() {
                 alt="React"
               />
             </div>
-            <div className="flex gap-4">
+            <div className="flex gap-2 md:gap-4">
               <img
                 className="ts-icons duration-500"
                 src={nodeIcon}
@@ -63,7 +63,7 @@ function Main() {
                 alt="Express"
               />
             </div>
-            <div className="flex gap-4">
+            <div className="flex gap-2 md:gap-4">
               <img
                 className="ts-icons duration-500"
                 src={tailwindIcon}
@@ -77,25 +77,23 @@ function Main() {
             </div>
           </div>
         </div>
-        <div className="flex items-center justify-end max-w-60">
+        <div className="flex md:items-center justify-center md:justify-end max-w-60 mt-4">
           <img className="foto" src={myFoto} alt="Yago´s Photo" />
         </div>
       </section>
       <section
         id="projects"
-        className="w-full bg-white about flex flex-col justify-center"
+        className="w-auto bg-white flex flex-col justify-center"
       >
-        <div className="max-w-2xl px-7 pt-12 mb-20 mx-auto">
-          <h5 className="text-black h3 mb-20 lg:mb-4 text-4xl pt-4 text-left">
+        <div className="max-w-2xl px-12 md:px-7 pt-8 md:pt-12 mb-12 md:mb-20 mx-auto">
+          <h5 className="text-black h3 md:mb-20 lg:mb-4 text-4xl pt-4 text-center md:text-left">
             Projects
           </h5>
-          <div className="image-container">
-            <img
-              className="mt-12 radius"
-              src="https://i.imgur.com/Z3cvyZP.png"
-              alt="Freebie It Project"
-            />
-          </div>
+          <img
+            className="mt-12 radius"
+            src="https://i.imgur.com/Z3cvyZP.png"
+            alt="Freebie It Project"
+          />
           <div className="flex items-center justify-between mt-5">
             <h4 className="text-black h3 font-medium text-2xl">
               Reduce, Reuse, Rehome

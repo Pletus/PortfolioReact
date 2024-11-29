@@ -8,13 +8,6 @@ body {
   height: 3.6rem;
 }
 
-.logo {
-  font-family: "Mitr", cursive;
-  color: black;
-  display: inline-flex;
-  align-self: center;
-}
-
 .navlinks {
   font-family: "Mitr", sans-serif;
   color: black;
