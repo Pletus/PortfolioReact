@@ -155,8 +155,8 @@ function Main() {
         id="about"
         className="w-full flex flex-col justify-center items-center"
       >
-        <div className="max-w-2xl px-7 pt-12 mb-28 mx-auto">
-          <h5 className="text-black h3 mb-20 lg:mb-4 text-4xl pt-4 text-left">
+        <div className="max-w-2xl px-12 md:px-7 pt-8 md:pt-12 mb-12 md:mb-20 mx-auto">
+          <h5 className="text-black h3 md:mb-20 lg:mb-4 text-4xl pt-4 text-center md:text-left">
             About me
           </h5>
           <p className="text-black h3 pt-4 text-sm text-center md:text-left lg:text-left">
@@ -174,12 +174,12 @@ function Main() {
         </div>
       </section>
       <section id="contact" className="bg-white w-full">
-        <div className="max-w-2xl px-7 pt-12 pb-20 mx-auto">
-          <h5 className="text-black h3 mb-20 lg:mb-4 text-4xl pt-4 text-left">
+        <div className="max-w-2xl px-12 md:px-7 pt-8 md:pt-12 pb-12 md:pb-20 mx-auto">
+          <h5 className="text-black h3 md:mb-20 lg:mb-4 text-4xl pt-4 text-center md:text-left">
             Say hi!
           </h5>
-          <div className="flex flex-col md:flex-row justify-between pt-3">
-            <div className="flex flex-col">
+          <div className="flex flex-col md:flex-row items-start md:justify-between pt-3">
+            <div className="flex flex-row md:flex-col justify-center items-center md:items-start">
               <img
                 className="ts-icons2 duration-700"
                 src={emailIcon}
@@ -192,7 +192,7 @@ function Main() {
                 yagopb@gmail.com
               </p>
             </div>
-            <div>
+            <div className="flex flex-row md:flex-col justify-center items-center md:items-start">
               <img
                 className="ts-icons2 duration-700"
                 src={linkedinIcon2}
@@ -201,11 +201,16 @@ function Main() {
               <h6 className="text-black h3 text-md pt-3 text-left font-medium text-sm">
                 Find me at:
               </h6>
-              <p className="text-black h3 text-md text-sm text-left">
-                yagopb@gmail.com
-              </p>
+              <a
+                className="text-black h3 text-md text-sm text-left"
+                href="http://www.linkedin.com/in/yagopb"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                linkedin.com/in/yagopb
+              </a>
             </div>
-            <div>
+            <div className="flex flex-row md:flex-col justify-center items-center md:items-start">
               <img
                 className="ts-icons2 duration-700"
                 src={mapsIcon}
@@ -222,11 +227,11 @@ function Main() {
         </div>
       </section>
       <footer className="bg-black">
-        <div className="max-w-2xl px-7 pt-20 pb-20 mx-auto flex justify-between items-center flex-col md:flex-row">
+        <div className="max-w-2xl px-7 pt-20 pb-16 mx-auto flex justify-between items-center flex-col md:flex-row">
           <h4 className="text-white h3 text-sm text-center md:text-left lg:text-left">
             Copyright © 2024. All rights are reserved
           </h4>
-          <div className="flex gap-4">
+          <div className="flex pt-8 md:pt-0 gap-4">
             <a
               href="http://www.linkedin.com/in/yagopb"
               target="_blank"
