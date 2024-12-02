@@ -19,8 +19,8 @@ import "../App.css";
 function Main() {
   return (
     <div>
-      <section className="max-w-2xl px-12 md:px-7 mx-auto flex flex-col md:flex-row justify-center items-center mt-24 md:mt-24 mb-10 md:mb-28">
-        <div className="flex flex-col items-center gap-2">
+      <section className="max-w-2xl px-4 md:px-6 mx-auto flex flex-col md:flex-row justify-center items-center mt-12 md:mt-28 mb-10 md:mb-32">
+        <div className="flex flex-col items-center md:items-start mt-12 md:mt-4">
           <div className="p-2">
             <h1 className="text-black navlinks text-4xl text-center md:text-left lg:text-left">
               Full-Stack Web Developer
@@ -30,7 +30,7 @@ function Main() {
               high-quality websites.
             </p>
           </div>
-          <div className="flex flex-wrap md:p-2 md:mt-5 gap-2 md:gap-4">
+          <div className="flex flex-wrap md:p-2 mt-2 md:mt-5 gap-2 md:gap-4">
             <div className="flex gap-2 md:gap-4">
               <img
                 className="ts-icons duration-500"
@@ -77,7 +77,7 @@ function Main() {
             </div>
           </div>
         </div>
-        <div className="flex md:items-center justify-center md:justify-end max-w-60 mt-4">
+        <div className="flex mt-6 md:items-center justify-center md:justify-end max-w-60">
           <img className="foto" src={myFoto} alt="Yago´s Photo" />
         </div>
       </section>
@@ -85,7 +85,7 @@ function Main() {
         id="projects"
         className="w-auto bg-white flex flex-col justify-center"
       >
-        <div className="max-w-2xl px-12 md:px-7 pt-8 md:pt-12 mb-12 md:mb-20 mx-auto">
+        <div className="max-w-2xl px-6 pt-8 md:pt-12 mb-12 md:mb-20 mx-auto">
           <h5 className="text-black h3 md:mb-20 lg:mb-4 text-4xl pt-4 text-center md:text-left">
             Projects
           </h5>
@@ -95,9 +95,7 @@ function Main() {
             alt="Freebie It Project"
           />
           <div className="flex items-center justify-between mt-5">
-            <h4 className="text-black h3 font-medium text-2xl">
-              Reduce, Reuse, Rehome
-            </h4>
+            <h4 className="text-black h3 font-medium text-2xl">Freebie It</h4>
             <div className="flex flex-row justify-center items-center gap-1">
               <img
                 className="external-link-icon"
@@ -124,10 +122,8 @@ function Main() {
             src="https://i.imgur.com/Si1Et1Y.png"
             alt="Pokemon Project"
           />
-          <div className="flex items-center justify-between mt-3">
-            <h4 className="text-black h3 font-medium text-2xl">
-              Find your Pokemon!
-            </h4>
+          <div className="flex items-center justify-between mt-5">
+            <h4 className="text-black h3 font-medium text-2xl">Pokefights</h4>
             <div className="flex flex-row items-center gap-1">
               <img
                 className="external-link-icon"
@@ -155,11 +151,11 @@ function Main() {
         id="about"
         className="w-full flex flex-col justify-center items-center"
       >
-        <div className="max-w-2xl px-12 md:px-7 pt-8 md:pt-12 mb-12 md:mb-20 mx-auto">
+        <div className="max-w-2xl px-6 pt-8 md:pt-12 mb-12 md:mb-20 mx-auto">
           <h5 className="text-black h3 md:mb-20 lg:mb-4 text-4xl pt-4 text-center md:text-left">
             About me
           </h5>
-          <p className="text-black h3 pt-4 text-sm text-center md:text-left lg:text-left">
+          <p className="text-black h3 pt-4 text-sm text-left lg:text-left">
             As a Full-Stack Developer, I am passionate about building seamless
             websites and applications. I have experience with frontend
             technologies like TailwindCSS, HTML, CSS, JavaScript, and React, as
@@ -174,60 +170,62 @@ function Main() {
         </div>
       </section>
       <section id="contact" className="bg-white w-full">
-        <div className="max-w-2xl px-12 md:px-7 pt-8 md:pt-12 pb-12 md:pb-20 mx-auto">
+        <div className="max-w-96 md:max-w-2xl px-6 pt-8 md:pt-12 pb-12 md:pb-20 mx-auto">
           <h5 className="text-black h3 md:mb-20 lg:mb-4 text-4xl pt-4 text-center md:text-left">
             Say hi!
           </h5>
-          <div className="flex flex-col md:flex-row items-start md:justify-between pt-3">
-            <div className="flex flex-row md:flex-col justify-center items-center md:items-start">
-              <img
-                className="ts-icons2 duration-700"
-                src={emailIcon}
-                alt="E-mail"
-              />
-              <h6 className="text-black h3 text-md pt-3 text-left font-medium text-sm">
-                Write to:
-              </h6>
-              <p className="text-black h3 text-md text-sm text-left">
-                yagopb@gmail.com
-              </p>
-            </div>
-            <div className="flex flex-row md:flex-col justify-center items-center md:items-start">
-              <img
-                className="ts-icons2 duration-700"
-                src={linkedinIcon2}
-                alt="Linkedin"
-              />
-              <h6 className="text-black h3 text-md pt-3 text-left font-medium text-sm">
-                Find me at:
-              </h6>
-              <a
-                className="text-black h3 text-md text-sm text-left"
-                href="http://www.linkedin.com/in/yagopb"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                linkedin.com/in/yagopb
-              </a>
-            </div>
-            <div className="flex flex-row md:flex-col justify-center items-center md:items-start">
-              <img
-                className="ts-icons2 duration-700"
-                src={mapsIcon}
-                alt="Location"
-              />
-              <h6 className="text-black h3 text-md pt-3 text-left font-medium text-sm">
-                Located at:
-              </h6>
-              <p className="text-black h3 text-md text-sm text-left">
-                Berlin, Germany
-              </p>
+          <div className="flex md:justify-between md:items-start pt-3 md:pt-0">
+            <div className="flex flex-col md:flex-row justify-between items-start w-full gap-6 px-4 pt-3">
+              <div className="flex flex-row md:flex-col justify-center items-start gap-2 md:gap-0">
+                <img
+                  className="ts-icons2 duration-700"
+                  src={emailIcon}
+                  alt="E-mail"
+                />
+                <h6 className="text-black h3 text-md md:pt-3 text-left font-medium text-sm">
+                  Write to:
+                </h6>
+                <a href="mailto:yagopb@gmail.com" className="text-black h3 text-md text-sm text-left">
+                  yagopb@gmail.com
+                </a>
+              </div>
+              <div className="flex pt-2 md:pt-0 flex-row md:flex-col justify-center items-start gap-2 md:gap-0">
+                <img
+                  className="ts-icons2 duration-700"
+                  src={linkedinIcon2}
+                  alt="Linkedin"
+                />
+                <h6 className="text-black h3 text-md md:pt-3 text-left font-medium text-sm">
+                  Find me at:
+                </h6>
+                <a
+                  className="text-black h3 text-md text-sm text-left"
+                  href="http://www.linkedin.com/in/yagopb"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  linkedin.com/in/yagopb
+                </a>
+              </div>
+              <div className="flex pt-2 md:pt-0 flex-row md:flex-col justify-center items-start gap-2 md:gap-0">
+                <img
+                  className="ts-icons2 duration-700"
+                  src={mapsIcon}
+                  alt="Location"
+                />
+                <h6 className="text-black h3 text-md md:pt-3 text-left font-medium text-sm">
+                  Located at:
+                </h6>
+                <p className="text-black h3 text-md text-sm text-left">
+                  Berlin, Germany
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </section>
       <footer className="bg-black">
-        <div className="max-w-2xl px-7 pt-20 pb-16 mx-auto flex justify-between items-center flex-col md:flex-row">
+        <div className="max-w-2xl px-6 pt-20 pb-16 mx-auto flex justify-between items-center flex-col md:flex-row">
           <h4 className="text-white h3 text-sm text-center md:text-left lg:text-left">
             Copyright © 2024. All rights are reserved
           </h4>
