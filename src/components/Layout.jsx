@@ -1,5 +1,5 @@
-import { Outlet, NavLink } from "react-router-dom";
-import { useState, useEffect } from "react";
+import { Outlet } from "react-router-dom";
+import { useState, useEffect, useCallback } from "react";
 import { IoMenuOutline, IoCloseOutline } from "react-icons/io5";
 import "../App.css";
 
@@ -12,7 +12,7 @@ function Layout() {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  const handleScroll = () => {
+  const handleScroll = useCallback(() => {
     if (typeof window !== "undefined") {
       const currentScrollY = window.scrollY;
 
@@ -24,7 +24,7 @@ function Layout() {
 
       setLastScrollY(currentScrollY);
     }
-  };
+  }, [lastScrollY]);
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
@@ -32,15 +32,15 @@ function Layout() {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [lastScrollY]);
+  }, [handleScroll]);
 
   return (
     <div className="flex flex-col justify-center">
       <nav
         className={`w-full flex flex-col md:flex-row justify-between items-center bg-white px-2 py-2 md:py-3 md:px-16 transition-all duration-300 ${
           navbarVisible
-            ? "fixed top-0 left-0 w-full transition-all duration-500 ease-in-out"
-            : "-top-[70px] transition-all duration-500 ease-in-out"
+            ? "fixed top-0 left-0 w-full"
+            : "-top-[70px]"
         }`}
       >
         <span className="text-2xl h3 text-center w-full md:w-auto md:text-left">

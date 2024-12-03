@@ -1,4 +1,3 @@
-import React from "react";
 import myFoto from "../assets/imgs/Photo 2.jpg";
 import htmlIcon from "../assets/icons/html-5-svgrepo-com.svg";
 import cssIcon from "../assets/icons/css-3-svgrepo-com.svg";
@@ -26,8 +25,8 @@ function Main() {
               Full-Stack Web Developer
             </h1>
             <p className="md:max-w-80 text-sm text-black h3 text-center md:text-left lg:text-left mt-4">
-              Hi, I'm Yago, a Berlin-based web developer, focused on delivering
-              high-quality websites.
+              Hi, I&apos;m Yago, a Berlin-based web developer, focused on
+              delivering high-quality websites.
             </p>
           </div>
           <div className="flex flex-wrap md:p-2 mt-2 md:mt-5 gap-2 md:gap-4">
@@ -185,7 +184,10 @@ function Main() {
                 <h6 className="text-black h3 text-md md:pt-3 text-left font-medium text-sm">
                   Write to:
                 </h6>
-                <a href="mailto:yagopb@gmail.com" className="text-black h3 text-md text-sm text-left">
+                <a
+                  href="mailto:yagopb@gmail.com"
+                  className="text-black h3 text-md text-sm text-left"
+                >
                   yagopb@gmail.com
                 </a>
               </div>
