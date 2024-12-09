@@ -18,18 +18,18 @@ import "../App.css";
 function Main() {
   return (
     <div>
-      <section className="max-w-2xl px-4 md:px-6 mx-auto flex flex-col md:flex-row justify-center items-center mt-12 md:mt-28 mb-10 md:mb-32">
-        <div className="flex flex-col items-center md:items-start mt-12 md:mt-4">
-          <div className="p-2">
-            <h1 className="text-black navlinks text-4xl text-center md:text-left lg:text-left">
+      <section className="max-w-3xl px-6 md:px-4 mx-auto flex flex-col md:flex-row justify-between items-center mt-12 md:mt-32 mb-10 md:mb-36">
+        <div className="flex flex-col items-center md:items-start p mt-12 md:mt-3">
+          <div>
+            <h1 className="text-black navlinks text-3xl md:text-5xl text-center md:text-left lg:text-left">
               Full-Stack Web Developer
             </h1>
-            <p className="md:max-w-80 text-sm text-black h3 text-center md:text-left lg:text-left mt-4">
+            <p className="md:max-w-lg text-md text-black h3 text-center md:text-left lg:text-left mt-4">
               Hi, I&apos;m Yago, a Berlin-based web developer, focused on
               delivering high-quality websites.
             </p>
           </div>
-          <div className="flex flex-wrap md:p-2 mt-2 md:mt-5 gap-2 md:gap-4">
+          <div className="flex flex-wrap px-1 md:px-0 mt-4 md:mt-2 md:pt-7 gap-2 md:gap-4">
             <div className="flex gap-2 md:gap-4">
               <img
                 className="ts-icons duration-500"
@@ -76,7 +76,7 @@ function Main() {
             </div>
           </div>
         </div>
-        <div className="flex mt-6 md:items-center justify-center md:justify-end max-w-60">
+        <div className="flex mt-6 md:items-center justify-center md:justify-end max-w-xs pl-4">
           <img className="foto" src={myFoto} alt="Yago´s Photo" />
         </div>
       </section>
@@ -84,8 +84,8 @@ function Main() {
         id="projects"
         className="w-auto bg-white flex flex-col justify-center"
       >
-        <div className="max-w-2xl px-6 pt-8 md:pt-12 mb-12 md:mb-20 mx-auto">
-          <h5 className="text-black h3 md:mb-20 lg:mb-4 text-4xl pt-4 text-center md:text-left">
+        <div className="max-w-3xl px-6 md:px-4 pt-8 md:pt-12 mb-12 md:mb-20 mx-auto">
+          <h5 className="text-black h3 md:mb-20 lg:mb-4 text-3xl md:text-5xl pt-4 text-center md:text-left">
             Projects
           </h5>
           <img
@@ -94,7 +94,7 @@ function Main() {
             alt="Freebie It Project"
           />
           <div className="flex items-center justify-between mt-5">
-            <h4 className="text-black h3 font-medium text-2xl">Freebie It</h4>
+            <h4 className="text-black h3 font-medium text-xl md:text-3xl">Freebie It</h4>
             <div className="flex flex-row justify-center items-center gap-1">
               <img
                 className="external-link-icon"
@@ -102,7 +102,7 @@ function Main() {
                 alt="link icon"
               />
               <a
-                className="text-black text-sm h3"
+                className="text-black text-sm md:text-lg h3"
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://freebie-it.netlify.app/"
@@ -111,7 +111,7 @@ function Main() {
               </a>
             </div>
           </div>
-          <p className="text-black h3 text-xs mt-3">
+          <p className="text-black h3 text-sm md:text-lg mt-3">
             A social network built with the MERN Stack, enabling users to share
             and discover locations where unwanted items are left on the street
             for reuse, promoting sustainability and reducing waste.
@@ -122,7 +122,7 @@ function Main() {
             alt="Pokemon Project"
           />
           <div className="flex items-center justify-between mt-5">
-            <h4 className="text-black h3 font-medium text-2xl">Pokefights</h4>
+            <h4 className="text-black h3 font-medium text-xl md:text-3xl">Pokefights</h4>
             <div className="flex flex-row items-center gap-1">
               <img
                 className="external-link-icon"
@@ -130,7 +130,7 @@ function Main() {
                 alt="link icon"
               />
               <a
-                className="text-black text-sm h3"
+                className="text-black text-sm md:text-lg h3"
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://cute-crostata-59eac6.netlify.app/"
@@ -139,7 +139,7 @@ function Main() {
               </a>
             </div>
           </div>
-          <p className="text-black h3 text-xs mt-3">
+          <p className="text-black h3 text-sm md:text-lg mt-3">
             A Pokémon battle and Pokédex search app built with React, Node.js,
             Tailwind CSS, and PostgreSQL. Users can explore Pokémon details,
             simulate battles, and enjoy a dynamic, interactive interface.
@@ -150,11 +150,11 @@ function Main() {
         id="about"
         className="w-full flex flex-col justify-center items-center"
       >
-        <div className="max-w-2xl px-6 pt-8 md:pt-12 mb-12 md:mb-20 mx-auto">
-          <h5 className="text-black h3 md:mb-20 lg:mb-4 text-4xl pt-4 text-center md:text-left">
+        <div className="max-w-3xl px-6 md:px-4 pt-8 md:pt-12 mb-12 md:mb-20 mx-auto">
+          <h5 className="text-black h3 md:mb-20 lg:mb-4 text-3xl md:text-5xl pt-4 text-center md:text-left">
             About me
           </h5>
-          <p className="text-black h3 pt-4 text-sm text-left lg:text-left">
+          <p className="text-black h3 pt-4 text-sm md:text-lg text-left lg:text-left">
             As a Full-Stack Developer, I am passionate about building seamless
             websites and applications. I have experience with frontend
             technologies like TailwindCSS, HTML, CSS, JavaScript, and React, as
@@ -169,8 +169,8 @@ function Main() {
         </div>
       </section>
       <section id="contact" className="bg-white w-full">
-        <div className="max-w-96 md:max-w-2xl px-6 pt-8 md:pt-12 pb-12 md:pb-20 mx-auto">
-          <h5 className="text-black h3 md:mb-20 lg:mb-4 text-4xl pt-4 text-center md:text-left">
+        <div className="px-6 md:px-4 md:max-w-3xl pt-8 md:pt-12 pb-12 md:pb-20 mx-auto">
+          <h5 className="text-black h3 md:mb-20 lg:mb-4 text-3xl md:text-5xl pt-4 text-center md:text-left">
             Say hi!
           </h5>
           <div className="flex md:justify-between md:items-start pt-3 md:pt-0">
@@ -181,12 +181,12 @@ function Main() {
                   src={emailIcon}
                   alt="E-mail"
                 />
-                <h6 className="text-black h3 text-md md:pt-3 text-left font-medium text-sm">
+                <h6 className="text-black h3 text-sm md:pt-3 text-left font-medium md:text-lg">
                   Write to:
                 </h6>
                 <a
                   href="mailto:yagopb@gmail.com"
-                  className="text-black h3 text-md text-sm text-left"
+                  className="text-black h3 text-sm md:text-lg text-left"
                 >
                   yagopb@gmail.com
                 </a>
@@ -197,11 +197,11 @@ function Main() {
                   src={linkedinIcon2}
                   alt="Linkedin"
                 />
-                <h6 className="text-black h3 text-md md:pt-3 text-left font-medium text-sm">
+                <h6 className="text-black h3 text-sm md:pt-3 text-left font-medium md:text-lg">
                   Find me at:
                 </h6>
                 <a
-                  className="text-black h3 text-md text-sm text-left"
+                  className="text-black h3 text-sm md:text-lg text-left"
                   href="http://www.linkedin.com/in/yagopb"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -215,10 +215,10 @@ function Main() {
                   src={mapsIcon}
                   alt="Location"
                 />
-                <h6 className="text-black h3 text-md md:pt-3 text-left font-medium text-sm">
+                <h6 className="text-black h3 text-sm md:pt-3 text-left font-medium md:text-lg">
                   Located at:
                 </h6>
-                <p className="text-black h3 text-md text-sm text-left">
+                <p className="text-black h3 text-sm md:text-lg text-left">
                   Berlin, Germany
                 </p>
               </div>
@@ -227,8 +227,8 @@ function Main() {
         </div>
       </section>
       <footer className="bg-black">
-        <div className="max-w-2xl px-6 pt-20 pb-16 mx-auto flex justify-between items-center flex-col md:flex-row">
-          <h4 className="text-white h3 text-sm text-center md:text-left lg:text-left">
+        <div className="max-w-3xl px-6 md:px-4 pt-20 pb-16 mx-auto flex justify-between items-center flex-col md:flex-row">
+          <h4 className="text-white h3 text-sm md:text-lg text-center md:text-left lg:text-left">
             Copyright © 2024. All rights are reserved
           </h4>
           <div className="flex pt-8 md:pt-0 gap-4">

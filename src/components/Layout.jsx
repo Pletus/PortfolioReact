@@ -37,13 +37,13 @@ function Layout() {
   return (
     <div className="flex flex-col justify-center">
       <nav
-        className={`w-full flex flex-col md:flex-row justify-between items-center bg-white px-2 py-2 md:py-3 md:px-16 transition-all duration-300 ${
+        className={`w-full flex flex-col md:flex-row justify-between items-center bg-white px-2 py-2 md:py-4 md:px-8 lg:px-12 transition-all duration-300 ${
           navbarVisible
             ? "fixed top-0 left-0 w-full"
             : "-top-[70px]"
         }`}
       >
-        <span className="text-2xl h3 text-center w-full md:w-auto md:text-left">
+        <span className="text-3xl h3 text-center w-full md:w-auto md:text-left">
           Yago Pazos
         </span>
         <button onClick={handleMenuToggle} className="md:hidden text-3xl ml-2">
@@ -81,7 +81,7 @@ function Layout() {
             </li>
           </ul>
         </div>
-        <ul className="hidden md:flex md:flex-row md:gap-7 md:bg-white items-center">
+        <ul className="hidden md:flex md:flex-row md:gap-9 md:bg-white items-center">
           <li>
             <a className="navlinks hover:underline" href="/">
               Home
